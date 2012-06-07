@@ -1,5 +1,5 @@
 __author__ = "Reverberi Luca"
-
+# Based on this script: http://www.clshack.com/pythonfake-dns-server.html
 import SocketServer
 import socket
 from time import gmtime, strftime
