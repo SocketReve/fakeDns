@@ -44,8 +44,8 @@ class dnsServer(SocketServer.BaseRequestHandler):
 		
 			packet+=data[:2] + "\x81\x80"
 			packet+=data[4:6] + data[4:6] + '\x00\x00\x00\x00' 
-			packet+=data[12:]                                  
-			packet+='\xc0\x0c'                                 
+			packet+=data[12:]
+			packet+='\xc0\x0c'
 			packet+='\x00\x01\x00\x01\x00\x00\x00\x01\x00\x04' 
 			packet+=str.join('',map(lambda x: chr(int(x)), ip.split('.'))) 
 			print strftime("%d-%m-%Y,%H:%M:%S", gmtime())+" Request: %s and response with -> %s" % (dominio[:-1], ip)
