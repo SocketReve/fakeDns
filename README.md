@@ -1,3 +1,3 @@
 fakeDns
 =======
-Python Fake DNS with thread for perform multiple request
+Python Fake DNS with thread in order to perform multiple requests
